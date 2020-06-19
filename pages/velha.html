@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="stylesheet" href="../css/velha.css">
+    <title>Root Games</title>
+</head>
+
+<body onload="iniciar()">
+    <header>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Jogos</a>
+                    <div class="dropdownc">
+                        <a href="jokenpo.html">Jokenpo</a>
+                        <a href="#">Jogo da Velha</a>
+                        <a href="pensebem.html">Pense bem</a>
+                    </div>
+                 </li>
+            </ul>
+    </header>
+
+    <div class="conteudo">
+        <div class="top">
+            <div id="jogador">
+                <p id="jogador-nome1">JOGADOR 1</p>
+            </div>
+    
+            <div class="vs">
+                <p>vs</p>
+            </div>
+    
+            <div id="jogador-nome2">
+                <p>JOGADOR 2</p>
+            </div>
+        </div>
+
+        <main class="velha">
+            <div><input type="button" value="_"><input type="button" value="_"><input type="button" value="_"></div>
+            <div><input type="button" value="_"><input type="button" value="_"><input type="button" value="_"></div>
+            <div><input type="button" value="_"><input type="button" value="_"><input type="button" value="_"></div>			
+        </main>
+
+        <div id="reiniciar">
+            <input type="button" value="Reiniciar" id="reiniciar">
+        </div>
+        
+        <div id="placar">
+            <input type="text" value="*" readonly id="j1Pontos">
+            <input type="text" value="*" readonly id="j2Pontos">
+            <input type="text" value="Aguardando início.." readonly id="vencedor">
+        </div>
+
+        <footer id="rodape">
+            <address>
+                Desenvolvido por Giovanni Miranda &copy;<br>
+                Todos os Direitos Reservados
+            </address>
+        </footer>
+    </div>
+    <script src="../js/velha.js"></script>
+</body>
+</html>

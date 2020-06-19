@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="stylesheet" href="../css/pensebem.css">
+    <title>Root Games</title>
+</head>
+
+<body>
+    <header>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" onclick="btnToggle()" class="dropbtn">Jogos</a>
+                    <div class="dropdownc">
+                        <a href="jokenpo.html">Jokenpo</a>
+                        <a href="velha.html">Jogo da Velha</a>
+                        <a href="#">Pense bem</a>
+                    </div>
+                 </li>
+            </ul>
+    </header>
+
+    <div id="corpo">
+
+        <h1>Pense Bem</h1>
+
+        <div class="conteudo">
+                <input type="text" id="visor1" value="*" readonly class="visor">
+                <input type="text" id="visor2" readonly class="visor">
+
+            <div class="botoes">
+                <input type="button" id="botaoA" value="A" class="btn" onclick="jogar(this.value)">
+                <input type="button" id="botaoB" value="B" class="btn" onclick="jogar(this.value)">
+                <input type="button" id="botaoC" value="C" class="btn" onclick="jogar(this.value)">
+                <input type="button" id="botaoD" value="D" class="btn" onclick="jogar(this.value)">
+            </div>
+            
+            <div class="numeros">
+                <button class="btnn" onclick="addNumber(0)"><b>0</b></button>
+                <button class="btnn" onclick="addNumber(1)"><b>1</b></button>
+                <button class="btnn" onclick="addNumber(2)"><b>2</b></button>
+                <button class="btnn" onclick="addNumber(3)"><b>3</b></button>
+                <button class="btnn" onclick="addNumber(4)"><b>4</b></button>
+                <button class="btnn" onclick="addNumber(5)"><b>5</b></button>
+                <button class="btnn" onclick="addNumber(6)"><b>6</b></button>
+                <button class="btnn" onclick="addNumber(7)"><b>7</b></button>
+                <button class="btnn" onclick="addNumber(8)"><b>8</b></button>
+                <button class="btnn" onclick="off()"><b>Off</b></button>
+                <button class="btnn" onclick="on()"><b>On</b></button>
+                <button class="btnn" onclick="addNumber(9)"><b>9</b></button>
+                <button class="btnn" onclick="limpar()"><b>Limpar</b></button>
+                <button class="btnn" onclick="enter()"><b>Enter</b></button>
+            </div>
+        </div>
+        <div class="livros">
+            <p>Neste jogo temos disponíveis os livros: 021, 022, 023, 024 e 025.<br> Para obter acesso às perguntas, clique 
+                <a href="../pdf/Uma Aventura Científica com Sonic.pdf" target="_blank">aqui</a>.</p>
+            <p class="responsive">Informações adicionais:<br>Acerto na 1ª tentativa = 3 pontos<br>Acerto na 2ª tentativa = 2 pontos<br>Acerto na 3ª tentativa = 1 ponto
+        </div>
+    </div>
+
+
+
+    <div class="rodape">
+        <address>
+            Desenvolvido por Giovanni Miranda &copy;<br>
+            Todos os Direitos Reservados
+        </address>
+    </div>
+    <script src="../js/pensebem.js"></script>
+</body>
+</html>

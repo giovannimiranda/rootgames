@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Oswald&display=swap');
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Topo do site */
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    top: 130px;
+}
+
+ul li{
+    display: inline;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 400;
+    font-size: 16pt;
+}
+
+ul li a{
+    padding: 2px 10px;
+    display: inline-block;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+ul li a:hover, .dropdown:hover, .dropbtn:hover {
+    color: rgba(192, 95, 95, 0.5);
+    text-decoration: none;
+}
+
+.dropdownc {
+    display: none;
+    border-radius: 10px;
+    margin-left: 100px;
+    text-align: center;
+}
+
+.dropdownc a {
+    text-decoration: none;
+    display: block;
+    padding: 3px 16px;
+}
+
+.dropdown:hover .dropdownc {
+    display: block;
+}
+
+/* CORPO */
+body {
+    background-image: url('../img/headerbody.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+#corpo {
+    position: absolute;
+    width: 60%;
+    height: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    box-shadow: 9px 6px 6px rgba(0, 0, 0, 0.5);
+    background-color: rgba(240, 247, 150, 0.6);
+    padding: 10px;
+    margin-bottom: 30px;
+    top: 27%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.conteudo {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.visor {
+    width: 100%;
+    border: none;
+    text-align: center;
+    background-color: #000;
+    margin-left: 0;
+    cursor: default
+}
+
+#visor1 {
+    height: 70px;
+    border-radius: 5px;
+    font-family: 'Press Start 2P';
+    color: rgba(255, 0, 0, 0.26);
+    font-size: 28pt;
+}
+
+#visor2 {
+    height: 40px;
+    border-radius: 0 0 5px 5px;
+    font-size: 12pt;
+    border-top: 1px solid #ccc;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.botoes {
+    float: left;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.numeros {
+    width: 50%;
+    float: left;
+}
+
+.btnn {
+    width: 30%;
+    height: 33px;
+    flex-wrap: wrap;
+    cursor: pointer;
+    margin-top: 1px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+}
+
+.btn {
+    width: 50%;
+    cursor: pointer;
+}
+
+#botaoA, #botaoB, #botaoC, #botaoD {
+    width: 50%;
+    float: left;
+    color: white;
+    border-radius: 5px;
+    height: 80px;
+    font-size: 28pt;
+
+}
+
+input#botaoA {
+    background-color: red;
+}
+
+input#botaoB {
+    background-color: yellow;
+}
+
+input#botaoC {
+    background-color: blue;
+}
+
+input#botaoD {
+    background-color: green;
+}
+
+input#reiniciar {
+    width: 90%;
+    height: 25px;
+    border: black 1px solid;
+    background-color: #CCCCCC;
+    font-size: 11pt;
+}
+
+.livros {
+    margin-top: 200px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    font-size: 24pt;
+    text-shadow: 6px 4px rgba(0, 0, 0, 0.8);
+}
+
+.livros p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.livros a{
+    color: white;
+    text-decoration: none;
+}
+
+.livros a:hover {
+    color: tomato;
+}
+
+.responsive {
+    font-size: 15pt;
+}
+
+/* Rodapé */
+
+.rodape {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 94%;
+    color: white;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    font-size: 15pt;
+    text-align: center;
+    text-shadow: 2px 7px rgba(0, 0, 0, 0.5);
+}
+
+/* APENAS CELULARES */
+@media (max-width: 500px) {
+body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(../img/headerbodym.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+        
+ul {
+    top: 35px;
+}
+        
+ul li {
+    font-size: 10pt;
+}
+        
+.dropdownc {
+    margin-left: 80px;
+}
+        
+#corpo {
+    width: 90%;
+    height: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    box-shadow: 9px 6px 6px rgba(0, 0, 0, 0.5);
+    background-color: rgba(240, 247, 150, 0.6);
+    padding: 10px;
+    margin-bottom: 30px;
+    top: 16%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+        
+h1 {
+    font-size: 20pt;
+    text-shadow: none;
+}
+        
+p, .responsive {
+    font-size: 11pt;
+    text-shadow: none;
+}
+
+.btnn {
+    width: 31%;
+    height: 33px;
+    font-size: 8pt;
+}
+
+#visor1 {
+    font-size: 21pt;
+}
+
+.rodape {
+    top: 94%;
+    width: 100%;
+    font-size: 10pt;
+    margin-bottom: 5px;
+}
+}
