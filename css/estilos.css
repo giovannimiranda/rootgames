@@ -180,3 +180,55 @@ p {
 }
 }
 
+@media only screen and (device-width : 414px) and (device-height : 896px) and (-webkit-device-pixel-ratio : 2) {
+body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(../img/headerbodym.png) no-repeat center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+ul {
+    top: 35px;
+}
+
+ul li {
+    font-size: 10pt;
+}
+
+.dropdownc {
+    margin-left: 80px;
+}
+
+.conteudo {
+    top: 19%;
+}
+
+h1, h2 {
+    font-size: 14pt;
+    text-shadow: none;
+}
+
+p {
+    font-size: 11pt;
+    text-shadow: none;
+}
+
+#rodape {
+    width: 100%;
+    top: 254%;
+    font-size: 9pt;
+    margin-bottom: 5px;
+}
+}
+
