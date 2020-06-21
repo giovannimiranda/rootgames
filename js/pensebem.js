@@ -63,7 +63,7 @@ function enter() {
             gabarito = gabarito025
         else {
             alert('Número de pragrama Inválido')
-            window.location.href = 'pensebem.html'
+            window.location.href = '../pages/pensebem.html'
         }
     
         pontos = 0
